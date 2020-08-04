@@ -155,19 +155,24 @@
         </div>
         <div class="row">
             <div class="card-group">
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="card bg-primary">
-                        
+
                         <div class="form-group w-75">
-                            
+
 
                             <label for="inputState" class="ml-3">Ваша игра</label>
                             <select id="inputState" class="form-control ml-3">
                                 <option selected>Выбирайте...</option>
                                 <option>World of Warcraft</option>
+                                <option>Overwatch</option>
+                                <option>StarCraft 2</option>
+                                <option>Dota 2</option>
+                                <option>Valorant</option>
+                                <option>Hearthstone</option>
                             </select>
-                            <label for="inputState" class="ml-3">Уровень тренера</label>
-                            <select id="inputState" class="form-control ml-3">
+                            <label for="inputState2" class="ml-3">Уровень тренера</label>
+                            <select id="inputState2" class="form-control ml-3">
                                 <option selected>Выбирайте...</option>
                                 <option>Новичок</option>
                                 <option>1 звезда</option>
@@ -176,8 +181,8 @@
                                 <option>4 звезды</option>
                                 <option>5 звезд</option>
                             </select>
-                            <label for="inputState" class="ml-3">Ваш навык</label>
-                            <select id="inputState" class="form-control ml-3">
+                            <label for="inputState3" class="ml-3">Ваш навык</label>
+                            <select id="inputState3" class="form-control ml-3">
                                 <option selected>Выбирайте...</option>
                                 <option>Никогда не играл</option>
                                 <option>Только начал</option>
@@ -186,7 +191,17 @@
                                 <option>Лезу в топ</option>
                                 <option>Я про! Просто посмотреть</option>
                             </select>
-
+                            <label for="inputState4" class="ml-3">Направление</label>
+                            <select id="inputState4" class="ml-3 form-control w-100">
+                                <option selected>Выбирайте...</option>
+                                <option>Искать по любым направлениям</option>
+                                <option>Выбрать все направления</option>
+                                <option>PvE и PvP</option>
+                                <option>Экономика</option>
+                                <option>PvP</option>
+                                <option>PvE</option>
+                            </select>
+                           
                         </div>
                         <a {{randomFindStart}}} class="btn btn-warning text-center">
                             <h2>Искать случайного наставника</h2>
@@ -194,9 +209,9 @@
                     </div>
                 </div>
                 <!--/div -->
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-1">
                     <div class="card bg-primary text-white " style="display: inline-block">
-                        
+
                         <div class="card-body text-center">
                             <h4 class="card-title">{{firstName}} {{nickName}} {{lastName}}</h4>
                             <p class="card-text">{{infoCoach}}</p>
@@ -214,12 +229,12 @@
                             <a {{profileToCoach}}} class="btn btn-warning">
                                 <h3>Профиль ></h3>
                             </a>
-                           
+
                         </div>
                         <img class="card-img-bottom" src="img/test-coach-img.jpg" {{cardImgAlt}}>
                     </div> <!-- Конец карты!-->
                 </div> <!-- Колонка-->
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-1">
                     <div class="card bg-primary text-white " style="display: inline-block">
                         <div class="card-body text-center">
                             <h4 class="card-title">{{firstName}} {{nickName}} {{lastName}}</h4>
@@ -238,7 +253,7 @@
                             <a {{profileToCoach}}} class="btn btn-warning">
                                 <h3>Профиль ></h3>
                             </a>
-                            
+
                         </div>
                         <img class="card-img-bottom" src="img/test-coach-img.jpg" {{cardImgAlt}}>
                     </div> <!-- Конец карты!-->

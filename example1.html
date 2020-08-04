@@ -3,23 +3,26 @@
 <!-- Все наименования фирмы указаны как GTL, создать переменную? -->
 
 <head class="head">
-    <TITLE>Профиль</TITLE>
+    <TITLE>Достижения</TITLE>
     <script src="js/main.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Мой CSS далее-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- шрифт Опен Санс для текста и робото для заголовков-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
+
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- Иконки-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 
-<body class="bg-body">
+<body class="">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" id="dark-orange" href="index.html">GTL</a>
@@ -38,7 +41,7 @@
                     <li class="nav-item">
                         <a class="nav-link" id="dark-orange" href="coach.html">Наставники</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" id="dark-orange">
                         <a class="nav-link dropdown-toggle" id="dark-orange" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Сотрудники
                         </a>
@@ -46,7 +49,7 @@
                             <a class="dropdown-item" id="dark-orange" href="#">Команда</a>
                             <a class="dropdown-item" id="dark-orange" href="#">Стать участником проекта</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" id="dark-orange" href="platform-standards.html">Правила и стандарты платформы</a>
+                            <a class="dropdown-item" id="dark-orange" href="#">Правила и стандарты платформы</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -133,38 +136,37 @@
         </nav>
     </header>
     <main class="bg-gold">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-                <h1 class="text-center">Аккаунт</h1>
+        <div class="row text-center">
+            <div class="text-center col-sm-12 col-md-12 col-lg-12">
+               <a href="coach-office.html" class="btn btn-primary"><p>Назад</p></a>
+                <h1>Аккаунт наставника</h1>
+                <p>{{firstName}}{{nickName}}{{lastName}}</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <h2>Меню профиля</h2>
-                <a href="profile.html" class="nav-link active btn-success">Профиль</a>
-                <a href="diary.html" class="nav-link">Дневник</a>
-                <a href="bookmarks.html" class="nav-link">Закладки</a>
-                <a href="coach-office.html" class="nav-link">Наставник</a>
-                <a href="message.html" class="nav-link">Сообщения</a>
-                <a href="friends.html" class="nav-link">Друзья</a>
-                <a href="account.html" class="nav-link">Настройки</a>
-                <a href="#" class="nav-link bg-danger">На урок!</a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card-columns">
-                    <div class="card">
-                        <img class="card-img-top" src="img/test-coach-img.jpg">
-                        <button class="btn btn-primary">Загрузить фото</button>
-                        <!-- Кнопка Удалить из друзей подразумивает наличие соц составляющей. Решай сам!-->
-                        <button class="btn btn-danger">Удалить из друзей</button>
-                        <button class="btn btn-success">Добавить в друзья</button>
-                        <button class="btn btn-warning">Ваша заявка принята</button>
-                        <button class="btn btn-warning">Написать сообщение</button>
+            <div class="co-sm-4 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/test-coach-img.jpg">
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                     </div>
-                    <h2>{{firstName}} {{nickName}} {{lastName}}</h2>
-                    <p>{{info}}</p>
-                    <p>{{game}}</p>
+                     <div class="mt-3">
+                        <span class="fa fa-vk"></span>
+                        <span class="fa fa-youtube"></span>
+                        <span class="fa fa-telegram"></span>
+                        <span class="fa fa-twitch"></span>
+                        <span class="fa fa-instagram"></span>
+                    </div>
                 </div>
-                <div class="form-group">
-
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <p>Уровень звезд</p>
+                   <p>3</p>
+                 
+                    
                     <label class="col-sm-10 col-md-10 col-lg-10 w-100 col-form-label">Уровень пользователя
                         <div class="col-sm-10 col-md-10 col-lg-10 w-100">
                             <input type="text" readonly class="form-control-plaintext" id="Lvl" value="5">
@@ -178,20 +180,31 @@
 
                         </div>
                     </label>
-                </div>
+                <h3>Игра 1</h3>
+                <p>{{gameOne}}</p>
+                <p>{{mainStyle}}</p>
 
+                <h3>Игра 2</h3>
+                <p>{{gameTwo}}</p>
+                <p>{{mainStyleTwo}}</p>
+
+                <h3>Игра 3</h3>
+                <p>{{gameThree}}</p>
+                <p>{{mainStyleThree}}</p>
+                
+               
+                <p>{{contactsForLearn}}</p>
+                <p>{{youBisList}}</p>
+                <p>{{infoCoach}}</p>
+                <p>{{ButtonOnMainGameProfile}}</p>
+                
+                
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <a href="#" target="_blank"><p>Достижения:</p></a><p><span class="points">10</span> очков</p>
-                <div class="w-100 bg-danger">
-                    <p>Первый пользователь</p>
-                    <h3>10 очков</h3>
-                </div>
-                {{achiveLast}}
-                {{achiveLast}}
-                {{achiveLast}}
-                <div>
+           
+            <div class="text-center col-sm-12 col-md-6 col-lg-4 text-center">
+               <div>
                     <h3>Расписание</h3>
+                    <!-- Только коучу видно свое расписание-->
                     <div>
                         <a href="#">
                             <div class="container bg-danger text-white">
@@ -210,22 +223,12 @@
                     </div>
 
                 </div>
+                
+                
+                
             </div>
-        </div>
-        <div class="chat-with-coach">
-            <button data-toggle="collapse" data-target="#demo" class="btn btn-primary">У вас сообщение!</button>
-            <div id="demo" class="collapse bg-primary">
-                <h1 class="text-center">Чат</h1>
-                <div class="coach-m">
-                    <p>Привет! До урока 10 минут!</p>
-                </div>
-                <div class="to-coach-m">
-                    <p>Ок! Вот мой ник! VasyaPro</p>
-                </div>
-            </div>
-        </div>
 
-
+        </div>
     </main>
     <footer>
         <div class="row">

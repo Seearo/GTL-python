@@ -313,28 +313,46 @@
                         <select id="inputState" class="form-control">
                             <option selected>Выбирайте...</option>
                             <option>World of Warcraft</option>
+                            <option>Overwatch</option>
+                            <option>StarCraft 2</option>
+                            <option>Dota 2</option>
+                            <option>Valorant</option>
+                            <option>Hearthstone</option>
+                        </select>
+                        <label for="inputState" class="">Направление</label>
+                        <select id="inputState" class="form-control w-100">
+                            <option selected>Выбирайте...</option>
+                            <option>PvP</option>
+                            <option>PvE</option>
+                            <option>Экономика</option>
+                            <option>PvE и PvP</option> 
+                            <option>Выбрать все направления</option>
                         </select>
                         <!-- Поле выше должно брать значения из поля кауча в аккаунте с его играми если человек записывается не фильтруя тренеров по играм. Так он не сможет записаться на несуществующую игру у кауча. По пику даты в календаре вылазит 2 менюшки: первая показывает тебе слоты на занятия исходя из выбранных наставником в расписании, а вторая дает ввести данные для регистрации на наставника (для связи), если ты не зареган в системе!-->
                     </div>
                     <div class="form-group col-md-12 col-sm-12 col-lg-12">
                         <label>Ваш телефон<select id="inputState" class="form-control">
-                            <option selected>Выбирайте...</option>
-                            <option>Российская Федерация</option>
-                            <option>Украина</option>
-                            <option>Беларусь</option>
-                            <option>Казахстан</option>
-                        </select>
-                        <input class="form-control" type="tel">
+                                <option selected>Выбирайте...</option>
+                                <option>Российская Федерация</option>
+                                <option>Украина</option>
+                                <option>Беларусь</option>
+                                <option>Казахстан</option>
+                            </select>
+                            <input class="form-control" type="tel">
                         </label>
                         <label>Ваш меил<input class="form-control" type="email">
                         </label>
                     </div>
-                
-                <label>Контактная информация <textarea placeholder="Видна только наставнику и модераторам!" cols="15" rows="8" type="text" class=" form-control col-sm-12 col-md-12 col-lg-12"></textarea>
-                </label>
+
+                    <label>Контактная информация <textarea placeholder="Видна только наставнику и модераторам!" cols="15" rows="8" type="text" class=" form-control col-sm-12 col-md-12 col-lg-12"></textarea>
+                    </label>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4"><button class="btn btn-primary" type="submit">Записаться!</button></div>
+            <div class="w-100"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-4">
+                <p>Нажимая вы принимаете правила платформы GTL и политику конфеденциальности</p>
+                <button class="btn btn-primary" type="submit">Записаться!</button>
+            </div>
         </div>
 
     </main>

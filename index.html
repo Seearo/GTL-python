@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="bg-body">
+<body class="bg-body" id="bg-body">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" id="dark-orange" href="index.html">GTL</a>
@@ -65,7 +65,7 @@
                                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                                             <li class="nav-item">
                                                 <a class="nav-link active col-sm-6 col-lg-6 col-md-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Регистрация</a>
-                                                </li>
+                                            </li>
                                             <li class="nav-item">
                                                 <a class="nav-link col-sm-6 col-lg-6 col-md-6 offset-2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Авторизация</a>
                                             </li>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="img/learn-girl.jpg" alt="Chicago" class="screen">
-                    
+
                 </div>
                 <div class="carousel-item">
                     <img src="img/social%20media%20logo%20for%20PvP%20Group.jpg" alt="New York" class="screen">
@@ -164,7 +164,7 @@
 
         </div>
     </header>
-    <main class="container bg-gold">
+    <main class="container mt-0 bg-gold" id="bg-gold">
         <div style="height: 20vh;" class="row w-100"></div>
         <div class="row">
             <div class="col-sm-12 text-center bg-dark-orange">
@@ -175,12 +175,14 @@
             <div class="col-sm-12 col-md-6 text-center bg-dark-orange">
                 <h2>Получить exp!</h2>
                 <p>Мы все через это проходили. То чувство, когда ты молодой и горячий, но тебе не достает опыта. GTL призван исправить эту проблему и ускорить получение Экспы. На нашей платформе вы сможете в короткие сроки получить отличную базу как для простых каток в компании друзей, так и для получения призовых мест на различных турнирах. Все зависит только от вас!</p>
-                <a class="btn btn-primary" href="random.html"><p>Начни со случайного наставника! Протестируй нас</p></a>
+                <a class="btn btn-primary" href="random.html">
+                    <p>Начни со случайного наставника! Протестируй нас</p>
+                </a>
             </div>
             <div class="col-sm-12 col-md-6 text-center bg-dark-orange">
                 <h2>Стать Наставником!</h2>
                 <p>У Вас огромный опыт игр? Победы не приносят былого удовлетворения? Вы знаете ходы противника задолго до их действий? Поздравляем! Вы достигли определенного результата, но что дальше? Где это применять? Теперь у Вас есть возможность реализовывать полученные навыки! Влияйте на будущее уже сегодня! Научите юных и не очень игроков самым крутым финтам и повышайте уровень кибер-спорта. Весь функционал на GTL!</p>
-                <a href="#">Кнопка на условия использования платформы GTL и переход к заявке кауча (нужна регистрация)</a>
+                <a href="#" class="btn btn-primary"><p>Переход в личный кабинет, если есть регистрация. </p></a>
             </div>
         </div>
         <div style="height: 20vh;" class="row w-100"></div>
@@ -278,21 +280,29 @@
             <div class="col-sm-12">
                 <h2>Наставники месяца</h2>
             </div>
-            <div class="card-deck">
+            <div class="card-deck text-white">
+
                 <div class="card bg-primary">
                     <img class="card-img-top" src="img/test-coach-img.jpg" alt="Card image">
                     <div class="card-body text-center">
                         <h4 class="card-title">Кристина "MinusDva" Антонова</h4>
                         <p class="card-text">Учу игре в Overwatch. Мой рейтинг 3500+ и более 800 часов игры!</p>
-                        <a href="#" class="btn btn-warning">See Profile</a>
+                        <a {{profileToCoach}}} class="btn btn-warning">
+                                <h3>Профиль ></h3>
+                            </a>
                     </div>
                 </div>
+
+
                 <div class="card bg-primary">
                     <img class="card-img-top" src="img/test-coach-img.jpg" alt="Card image">
                     <div class="card-body text-center">
                         <h4 class="card-title">{{firstName}} {{"nickName"}} {{lastName}}</h4>
                         <p class="card-text">{{infoCoach}}</p>
-                        <a href="#" class="btn btn-warning">{{profileLink}}</a>
+                        <a {{profileToCoach}}} class="btn btn-warning">
+                                <h3>Профиль ></h3>
+                            </a>
+
                     </div>
                 </div>
                 <div class="card bg-primary">
@@ -300,7 +310,9 @@
                     <div class="card-body text-center">
                         <h4 class="card-title">{{firstName}} {{"nickName"}} {{lastName}}</h4>
                         <p class="card-text">{{infoCoach}}</p>
-                        <a {{hrefProfileCoach}}} class="btn btn-warning">{{profileLink}}</a>
+                        <a {{profileToCoach}}} class="btn btn-warning">
+                                <h3>Профиль ></h3>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -335,6 +347,4 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
-
-</html>
+</body></html>

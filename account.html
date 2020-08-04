@@ -3,7 +3,7 @@
 <!-- Все наименования фирмы указаны как GTL, создать переменную? -->
 
 <head class="head">
-    <TITLE>GTL, play like a pro!</TITLE>
+    <TITLE>Ваш аккаунт!</TITLE>
     <script src="js/main.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -140,12 +140,12 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <h2>Меню профиля</h2>
                 <a href="profile.html" class="nav-link">Профиль</a>
-                <a href="#" class="nav-link">Дневник</a>
-                <a href="#" class="nav-link">Закладки</a>
+                <a href="diary.html" class="nav-link">Дневник</a>
+                <a href="bookmarks.html" class="nav-link">Закладки</a>
                 <a href="coach-office.html" class="nav-link">Наставник</a>
-                <a href="#" class="nav-link">Сообщения</a>
-                <a href="#" class="nav-link">Друзья</a>
-                <a href="account.html" class="nav-link active">Настройки</a>
+                <a href="message.html" class="nav-link">Сообщения</a>
+                <a href="friends.html" class="nav-link">Друзья</a>
+                <a href="account.html" class="nav-link active btn-success">Настройки</a>
                 <a href="#" class="nav-link bg-danger">На урок!</a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
@@ -173,6 +173,14 @@
                             <option>Hearthstone</option>
                         </select>
                     </label>
+                    <label for="inputState" class="">Направление</label>
+                    <select id="inputState" class="form-control w-100">
+                        <option selected>Выбирайте...</option>
+                        <option>PvP</option>
+                        <option>PvE</option>
+                        <option>Экономика</option>
+                    </select>
+                    
 
                     <label for="exampleFormControlTextarea1">Контактная информация</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>

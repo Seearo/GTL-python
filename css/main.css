@@ -46,11 +46,15 @@ a {
 .bg-dark-orange {
     background-color: darkorange;
 }
-
+#bg-gold {
+    background-color: gold;
+}
 .bg-gold {
     background-color: gold;
 }
-
+#bg-body {
+    background-color: beige;
+}
 .bg-body {
     background-color: beige;
 }
@@ -155,4 +159,71 @@ body {font-family: Verdana, sans-serif;}
 }
 .form-check-label {
     display: inline-block;
+}
+/* Стили для расписания, комменатриев и чатов! Style the container with a rounded border, grey background and some padding and margin */
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    /* Добавляем оверфлоу*/
+}
+.scroll {
+    overflow-y: auto;
+    height: 100vh;
+}
+/* Clear floats after containers */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+/* стили чата */
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.progress-bar {
+    
 }

@@ -141,10 +141,10 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <h2>Меню профиля</h2>
                 <a href="profile.html" class="nav-link">Профиль</a>
-                <a href="#" class="nav-link">Дневник</a>
-                <a href="#" class="nav-link">Закладки</a>
-                <a href="coach-office.html" class="nav-link active">Наставник</a>
-                <a href="#" class="nav-link">Сообщения</a>
+                <a href="diary.html" class="nav-link">Дневник</a>
+                <a href="bookmarks.html" class="nav-link">Закладки</a>
+                <a href="coach-office.html" class="nav-link active btn-success">Наставник</a>
+                <a href="message.html" class="nav-link">Сообщения</a>
                 <a href="#" class="nav-link">Друзья</a>
                 <a href="account.html" class="nav-link">Настройки</a>
                 <a href="#" class="nav-link bg-danger">На урок!</a>
@@ -157,7 +157,9 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="form-group w-75">
-                    <label for="inputState" class="ml-3">Ваши игры. До 3х штук</label>
+                    <label for="inputState" class="ml-3">Ваши игры. До 3х штук и ваше направление в них</label>
+                    <div>
+                    <p class="ml-3">1 игра</p>
                     <select id="inputState" class="form-control ml-3">
                         <option selected>Выбирайте...</option>
                         <option>World of Warcraft</option>
@@ -167,43 +169,68 @@
                         <option>Valorant</option>
                         <option>Hearthstone</option>
                     </select>
-                    <select id="inputState" class="form-control ml-3">
-                        <option selected>Выбирайте...</option>
-                        <option>World of Warcraft</option>
-                        <option>Overwatch</option>
-                        <option>StarCraft 2</option>
-                        <option>Dota 2</option>
-                        <option>Valorant</option>
-                        <option>Hearthstone</option>
-                    </select>
-                    <select id="inputState" class="form-control ml-3">
-                        <option selected>Выбирайте...</option>
-                        <option>World of Warcraft</option>
-                        <option>Overwatch</option>
-                        <option>StarCraft 2</option>
-                        <option>Dota 2</option>
-                        <option>Valorant</option>
-                        <option>Hearthstone</option>
-                    </select>
-                    
-                    <label for="inputState" class="ml-3">Направление</label>
-                    <select id="inputState" class="form-control ml-3">
+                    <select id="inputState" class="form-control ml-3 ">
                         <option selected>Выбирайте...</option>
                         <option>PvP</option>
                         <option>PvE</option>
                         <option>Экономика</option>
+                        <option>PvE и PvP</option>
+                        <option>Любое</option>
                     </select>
+                    </div>
+                     <div>
+                    <p class="ml-3">2 игра</p>
+                    <select id="inputState" class="form-control ml-3">
+                        <option selected>Выбирайте...</option>
+                        <option>World of Warcraft</option>
+                        <option>Overwatch</option>
+                        <option>StarCraft 2</option>
+                        <option>Dota 2</option>
+                        <option>Valorant</option>
+                        <option>Hearthstone</option>
+                    </select>
+                    <select id="inputState" class="form-control ml-3 ">
+                        <option selected>Выбирайте...</option>
+                        <option>PvP</option>
+                        <option>PvE</option>
+                        <option>Экономика</option>
+                        <option>PvE и PvP</option>
+                        <option>Любое</option>
+                    </select>
+                    </div>
+                     <div>
+                    <p class="ml-3">3 игра</p>
+                    <select id="inputState" class="form-control ml-3">
+                        <option selected>Выбирайте...</option>
+                        <option>World of Warcraft</option>
+                        <option>Overwatch</option>
+                        <option>StarCraft 2</option>
+                        <option>Dota 2</option>
+                        <option>Valorant</option>
+                        <option>Hearthstone</option>
+                    </select>
+                    <select id="inputState" class="form-control ml-3 ">
+                        <option selected>Выбирайте...</option>
+                        <option>PvP</option>
+                        <option>PvE</option>
+                        <option>Экономика</option>
+                        <option>PvE и PvP</option>
+                        <option>Любое</option>
+                    </select>
+                    </div>
+                    
                     <label for="starLvl" class="col-sm-2 col-form-label">Уровень звезд</label>
                     <div class="col-sm-10">
                         <input type="text" readonly class="form-control-plaintext" id="starLvl" value="Новичок">
                     </div>
-                    <label for="expLvl" class="col-sm-2 col-form-label">Опыта получено</label>
-                    <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" id="expLvl" value="500/1500">
-                    </div>
+                    
                     <label for="Lvl" class="col-sm-2 col-form-label">Уровень пользователя</label>
                     <div class="col-sm-10">
                         <input type="text" readonly class="form-control-plaintext" id="Lvl" value="5">
+                    </div>
+                    <label for="expLvl" class="col-sm-2 col-form-label">Опыта получено</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="expLvl" value="500/1500">
                     </div>
                 </div>
 
@@ -217,12 +244,12 @@
                     <label class="form-check-label" for="exampleCheck1">Показывать только мой Никнейм (в Наставниках)</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Индексировать мою страницу для поисковых систем</label>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Индексировать мою страницу для поисковых систем</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Отключить аккаунт Наставника и снять все записи!</label>
+                    <input type="checkbox" checked class="form-check-input" id="exampleCheck3">
+                    <label class="form-check-label" for="exampleCheck3">Отключить аккаунт Наставника и снять все записи!</label>
                 </div>
                 <label for="inputSex" class="ml-3 mt-3">Кого показывать на фото</label>
                 <select id="inputSex" class="form-control ml-3  w-75">
@@ -248,18 +275,24 @@
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Контактные данные для игр</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Ваши контактные данные видны только модераторам и ученикам"></textarea>
+                    <label for="inputState" class="ml-3">Кнопка на ваш игровой профиль</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Отсутсвует</option>
+                        <option>Только для учеников</option>
+                        <option>Для всех</option>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Вставляйте ссылку на профиль сюда"></textarea>
+                    </select>
                 </div>
-                <div>
-
-
-                </div>
+               
             </div>
 
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 offset-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-4">
+             
                 <button class="btn btn-primary mt-3">Сохранить</button>
                 <a href="#" class="btn btn-primary">
+                   <!-- Премиум наставник сможет влиять на данные аккаунта. Менять кейвордс, дискриптион, тайтл своего профиля наставника и возможно заменять URL (адрес профиля) на никнейм. Например: gtl.com/coach/happyzerg вместо gtl.com/coach/Qw1ar-tb56i . Рассмотрю также и другой функционал на твой вкус -->
                     <p>Аккаунт премиум наставника!</p>
                 </a>
                 <a class="btn btn-success m-2 ml-3 w-75">
